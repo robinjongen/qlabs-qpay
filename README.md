@@ -19,27 +19,27 @@ Please make sure git is installed, you can download git commandline tools [here]
 ## Set up and run the qpay payment solution
 
 1. Configure and run the qpay backend
-    1.1. Creating the database
-    1.2. Configure and run the Portal
-    1.3. Configure and run the API
+   1.1. Creating the database
+   1.2. Configure and run the Portal
+   1.3. Configure and run the API
 2. Setting up a Raspberry pi as payment terminal
 
 ## Required hardware
 
 **Everything here is tested with the hardware listed below, you should be able to make this work with most devices like OrangePi/RockPi/Odroid. If you use a different RFID/NFC-scanner please reffer to the guide/how-to for that specific reader as it might be different from the Explore-nfc-ww board.**
 
-* [Raspberry pi](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/)
+- [Raspberry pi](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/)
 
-* [Explore-nfc-ww](https://www.nxp.com/products/identification-and-security/nfc/nfc-reader-ics/explore-nfc-exclusive-from-element14:PNEV512R)
+- [Explore-nfc-ww](https://www.nxp.com/products/identification-and-security/nfc/nfc-reader-ics/explore-nfc-exclusive-from-element14:PNEV512R)
 
-* Any led lights should work.
+- Any led lights should work.
 
 ## Required software
 
-* [Visual Studio](https://visualstudio.microsoft.com/downloads/)
-* [Microsoft SQL Server](https://go.microsoft.com/fwlink/?linkid=853017)
+- [Visual Studio](https://visualstudio.microsoft.com/downloads/)
+- [Microsoft SQL Server](https://go.microsoft.com/fwlink/?linkid=853017)
 
------------
+---
 
 ### 1. Configure and run the qpay backend
 
@@ -49,21 +49,21 @@ Please make sure git is installed, you can download git commandline tools [here]
 
 #### 1.3. Configure and run the API
 
------------
+---
 
 ### 2. Setting up the Raspberry pi as payment terminal
 
 Before we begin with the installation please make sure you have wired the Explore-nfc-ww and led lights to the Raspberry pi as shown below.
 
 ![gpioPins](./README_RESOURCES/pinoutPi_bb.png)
-*The NFC reader will use most GPIO pins (blue lines)*
+_The NFC reader will use most GPIO pins (blue lines)_
 
 #### Required files and settings
 
-* A Raspberry running [raspbian](https://www.raspberrypi.org/downloads/raspbian/)(light)
-* [NXP Explore-nfc-ww library](https://www.nxp.com/products/:NFC-READER-LIBRARY?tab=In-Depth_Tab)
+- A Raspberry running [raspbian](https://www.raspberrypi.org/downloads/raspbian/)(light)
+- [NXP Explore-nfc-ww library](https://www.nxp.com/products/:NFC-READER-LIBRARY?tab=In-Depth_Tab)
 
-*Note: You have to transfer files over to the Raspberry pi, you can use SFTP for this or a service like [transfer.sh](https://transfer.sh/) in combination with the wget command.*
+_Note: You have to transfer files over to the Raspberry pi, you can use SFTP for this or a service like [transfer.sh](https://transfer.sh/) in combination with the wget command._
 
 You should enter the raspberry pi configuration and enable the SPI interface.
 
@@ -121,4 +121,4 @@ If everything is installed correctly you should see 'No card detected' as output
 **You have to make sure the url in the python script is pointing towards the address you are hosting your API !!!**
 
 TODO
-diagram gpio pinout
+Diagram gpio pinout
